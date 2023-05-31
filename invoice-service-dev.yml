@@ -1,8 +1,11 @@
 spring:
-  elasticsearch:
-    uris: http://localhost:9200
   application:
     name: invoice-service
+  data:
+    mongodb:
+      database: invoicedb
+      uri: mongodb://localhost:27017
+  
   kafka:
     consumer:
       auto-offset-reset: earliest
